@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-21T07:03:09.883Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="VD70Y9tffDi4eXydCpAN" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-21T07:09:21.953Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0" etag="DefIp5P2pJ4eaA_7lXr_" version="22.1.3" type="github">
   <diagram name="Page-1" id="8ce9d11a-91a2-4d17-14d8-a56ed91bf033">
     <mxGraphModel dx="1379" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -60,13 +60,18 @@
             <mxPoint x="185" y="785" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="kh-se0Qtyr8PqTerb3J5-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="kh-se0Qtyr8PqTerb3J5-20" target="kh-se0Qtyr8PqTerb3J5-28">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="kh-se0Qtyr8PqTerb3J5-20" target="kh-se0Qtyr8PqTerb3J5-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="733" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-20" value="反馈结果超过1/3的引擎报毒" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
           <mxGeometry x="95" y="750" width="90" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="kh-se0Qtyr8PqTerb3J5-23" value="查询VirusTotal API看是否有毒" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="kh-se0Qtyr8PqTerb3J5-23" target="kh-se0Qtyr8PqTerb3J5-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-23" value="使用frida-trace对的样本进行API提取，运行时间5min。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="370" y="630" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-24" value="无毒" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
@@ -76,13 +81,55 @@
           <mxGeometry x="325" y="540" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-28" value="流程结束" style="shape=hexagon;perimeter=hexagonPerimeter;whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=13;align=center;" vertex="1" parent="1">
-          <mxGeometry x="840" y="730" width="120" height="80" as="geometry" />
+          <mxGeometry x="850" y="60" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-29" value="超过1/3，为阳性" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="185" y="770" width="135" height="30" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-31" value="未超过1/3，为假阳性" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="160" y="830" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="kh-se0Qtyr8PqTerb3J5-32" target="kh-se0Qtyr8PqTerb3J5-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kh-se0Qtyr8PqTerb3J5-32" target="kh-se0Qtyr8PqTerb3J5-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-32" value="提取的API是否超过15个（包括相同API）" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="660" y="615" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="kh-se0Qtyr8PqTerb3J5-33" target="kh-se0Qtyr8PqTerb3J5-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-33" value="从数据集中剔除样本" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="630" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-37" value="未超过15个，认定为具有反逆向、反调试技术" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="780" y="670" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="kh-se0Qtyr8PqTerb3J5-38" target="kh-se0Qtyr8PqTerb3J5-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-38" value="对提取出来的API进行编码存储、打好标签" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="490" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="kh-se0Qtyr8PqTerb3J5-40" target="kh-se0Qtyr8PqTerb3J5-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-40" value="按照比例划分【训练10：测试1：验证1】" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="370" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kh-se0Qtyr8PqTerb3J5-42" target="kh-se0Qtyr8PqTerb3J5-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-42" value="每个比例里面按照种类进行划分【每个种类保证相同的样本量】" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="250" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="kh-se0Qtyr8PqTerb3J5-44" target="kh-se0Qtyr8PqTerb3J5-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kh-se0Qtyr8PqTerb3J5-44" value="种类里面按照每个月进行划分（考虑到验证集需要晚于训练集半年）" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="140" width="170" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

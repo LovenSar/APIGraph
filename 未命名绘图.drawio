@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-23T07:28:26.512Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.76" etag="pyGLxtNcuobgxPm_ghA6" version="22.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-23T07:31:59.354Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.76" etag="RhUbn2H9oHKSmdzwgOfu" version="22.1.3" type="github">
   <diagram name="Page-1" id="8ce9d11a-91a2-4d17-14d8-a56ed91bf033">
     <mxGraphModel dx="1379" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
       <root>
@@ -22,14 +22,14 @@
         <mxCell id="kh-se0Qtyr8PqTerb3J5-2" value="从数据集中提取动态链接的ELF文件。" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=13;align=center;" parent="1" vertex="1">
           <mxGeometry x="200" y="190" width="170" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="kh-se0Qtyr8PqTerb3J5-6" value="【具体的标签工作需要进一步确定】" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;size=30;position=0.2;" parent="1" vertex="1">
-          <mxGeometry x="370" y="280" width="220" height="50" as="geometry" />
-        </mxCell>
         <mxCell id="wmXQ8-3mE4IlHLH2qAup-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kh-se0Qtyr8PqTerb3J5-10" target="wmXQ8-3mE4IlHLH2qAup-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-10" value="对ELF文件基本信息检查，保存为elf_info.csv" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="200" y="320" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wmXQ8-3mE4IlHLH2qAup-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="kh-se0Qtyr8PqTerb3J5-12" target="wmXQ8-3mE4IlHLH2qAup-11">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-12" value="利用卡巴斯基for Linux进行查杀，生成结果result_kesl.csv" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="200" y="600" width="170" height="60" as="geometry" />
@@ -49,10 +49,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-23" value="使用frida-trace对的样本进行API提取，运行时间5min。" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="480" y="630" width="120" height="60" as="geometry" />
+          <mxGeometry x="640" y="630" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-28" value="流程结束" style="shape=hexagon;perimeter=hexagonPerimeter;whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=13;align=center;" parent="1" vertex="1">
-          <mxGeometry x="850" y="60" width="120" height="80" as="geometry" />
+          <mxGeometry x="1010" y="60" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-29" value="超过1/4，为阳性" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="197.5" y="760" width="60" height="30" as="geometry" />
@@ -67,40 +67,40 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-32" value="提取的API是否超过15个（包括相同API）" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="660" y="615" width="90" height="90" as="geometry" />
+          <mxGeometry x="820" y="615" width="90" height="90" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="kh-se0Qtyr8PqTerb3J5-33" target="kh-se0Qtyr8PqTerb3J5-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-33" value="从数据集中剔除样本" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="940" y="630" width="120" height="60" as="geometry" />
+          <mxGeometry x="1100" y="630" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-37" value="未超过15个，认定为具有反逆向、反调试技术" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="780" y="670" width="130" height="30" as="geometry" />
+          <mxGeometry x="940" y="670" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="kh-se0Qtyr8PqTerb3J5-38" target="kh-se0Qtyr8PqTerb3J5-40" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-38" value="对提取出来的API进行编码存储、打好标签" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="620" y="490" width="170" height="60" as="geometry" />
+          <mxGeometry x="780" y="490" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="kh-se0Qtyr8PqTerb3J5-40" target="kh-se0Qtyr8PqTerb3J5-42" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-40" value="按照比例划分【训练10：测试1：验证1】" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="620" y="370" width="170" height="60" as="geometry" />
+          <mxGeometry x="780" y="370" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="kh-se0Qtyr8PqTerb3J5-42" target="kh-se0Qtyr8PqTerb3J5-44" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-42" value="每个比例里面按照种类进行划分【每个种类保证相同的样本量】" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="620" y="250" width="170" height="60" as="geometry" />
+          <mxGeometry x="780" y="250" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="kh-se0Qtyr8PqTerb3J5-44" target="kh-se0Qtyr8PqTerb3J5-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="kh-se0Qtyr8PqTerb3J5-44" value="种类里面按照每个月进行划分（考虑到验证集需要晚于训练集半年）" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="620" y="140" width="170" height="60" as="geometry" />
+          <mxGeometry x="780" y="140" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="wmXQ8-3mE4IlHLH2qAup-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wmXQ8-3mE4IlHLH2qAup-5" target="kh-se0Qtyr8PqTerb3J5-20">
           <mxGeometry relative="1" as="geometry" />
@@ -114,8 +114,17 @@
         <mxCell id="wmXQ8-3mE4IlHLH2qAup-8" value="将VT的扫描结果生成result_VT.csv" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="225" y="690" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="wmXQ8-3mE4IlHLH2qAup-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wmXQ8-3mE4IlHLH2qAup-11" target="wmXQ8-3mE4IlHLH2qAup-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="wmXQ8-3mE4IlHLH2qAup-11" value="对三个csv进行merge，在大分类上采取kesl、在家族功能上采取VT的策略，权衡专业与数量" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="200" y="510" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wmXQ8-3mE4IlHLH2qAup-13" value="读文件进行初步标记" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="395" y="510" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wmXQ8-3mE4IlHLH2qAup-18" value="【fisrtseen_catagory_family_calss_arch_bit_endianness_isStripped_filesize_hash.labelf】" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=10;position=0.5;" vertex="1" parent="1">
+          <mxGeometry x="257.5" y="480" width="480" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
